@@ -5,8 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color:aqua;
     font-family:'Irish Grover', cursive;
-    
 }
+
+.container {
+    margin: 179px 35px 71px 129px;
+    height: 58vh;
+    background-color: #ff00c8;
+    padding: 0 100px;
+}
+
+.button {
+    border-top: 5px solid #580707;
+    border-right: 7px dashed #dfff00;
+    border-bottom: 2px dotted #ff00c8;
+    border-left: 6px solid #00f;
+    height: 150px;
+    width: 350px;
+    font-size: 54px;
+}
+
+.button:hover {
+    transition: .2s;
+    font-size: 96px;
+    opacity: 0.2;
+    background-color: #333;
+}
+
+#message {
+    float: right;
+    margin-top: 308px;
+    height: 80px;
+    width: 370px;
+    border: 1px solid black;
+    font-size: 100px;
+    overflow: hidden;
+} 
