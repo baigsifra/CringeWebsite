@@ -8,8 +8,5 @@
 body {
     background-color:aqua;
     font-family:'Irish Grover', cursive;
-    scrollbar-base-color: blue;
-    scrollbar-width: 100;
-    line-height: 10;
     
 }
