@@ -21,7 +21,7 @@ body {
 .button {
     border-top: 5px solid #580707;
     border-right: 7px dashed #dfff00;
-    border-bottom: 2px dotted #ff00c8;
+    border-bottom: 2px dotted #a200ff;
     border-left: 6px solid #00f;
     height: 150px;
     width: 350px;
@@ -44,3 +44,17 @@ body {
     font-size: 100px;
     overflow: hidden;
 } 
+
+.list {
+    margin-top: 31px;
+    margin-left: 13px;
+    height: 250px;
+    width: 462px;
+    font-size: 19px;
+    overflow: hidden;
+    background-color: rgb(143, 112, 46);
+}
+
+.list:hover {
+    background-color: black
+}
