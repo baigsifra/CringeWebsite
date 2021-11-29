@@ -64,4 +64,23 @@ body {
     background-color: #15ff00;
     color: #ff00c8;
     transition: 1s;
+    cursor: wait;
+}
+
+#web-body {
+    background-image: url("../img/bg_website.jpg");
+}
+
+#web-body {
+    cursor: zoom-in;
+}
+
+.stop-button {
+    padding: 21px 18px 7px 11px;
+    background: rgba(0,0,0,0.5);
+    margin: 135px 201px 237px 46px;
+}
+
+.stop-button:hover {
+    cursor: help;
 }
