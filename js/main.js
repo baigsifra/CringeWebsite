@@ -1,4 +1,8 @@
 let start;
+let sound = new Howl({
+  src: ['https://ia800902.us.archive.org/23/items/tvtunes_502/Pink%20Panther.mp3']
+});
+setInterval(function(){sound.play();}, genRandTime(6));
 
 function letin() {
     let randInt = Math.floor(Math.random() * 4 + 1);
@@ -14,10 +18,15 @@ function startColors() {
     start = setInterval(randomColor, 1);
 }
 
+function genRandTime(max) {
+    return Math.floor(Math.random() * max + 1) * 1000;
+}
+
 function stopColors() {
     clearInterval(start);
-    let randInt = Math.floor(Math.random() * 3 + 1);
-    setTimeout(startColors, randInt * 1000);
+    let randTime = genRandTime(3);
+    console.log(randTime);
+    setTimeout(startColors, randTime);
 }
 
 function randomColor() {
