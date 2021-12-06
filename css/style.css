@@ -99,6 +99,16 @@ body:hover {
       background-position : 0px 0px
     }
     100% {
-      background-position : 0px -808px
+      background-position : 900px -50px
     }
+  }
+
+  .report {
+    margin-top: 1px;
+    margin-left: 900px;
+    padding-left: 15px;
+    height: 550px;
+    width: 462px;
+    font-size: 20px;
+    color:rgb(0, 255, 255)
   }
