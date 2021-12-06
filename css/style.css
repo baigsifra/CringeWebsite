@@ -9,9 +9,6 @@
 body {
     background-color:aqua;
     font-family:'Irish Grover', cursive;
-    transition: 1;
-    background-image: url("../img/bg_website.jpg");
-    background-size: 800px;
 }
 
 .container {
@@ -73,6 +70,14 @@ body {
 #web-body {
     animation: bgScroll 0.5s linear infinite;
     cursor: zoom-in;
+    transition: 1;
+    background-image: url("../img/bg_website.jpg");
+    background-size: 800px;
+}
+
+#web-body:hover {
+    background-size: 2000px;
+    transition: 1s;
 }
 
 .stop-button {
@@ -99,6 +104,16 @@ body {
         background-position : 0px 0px
     }
     100% {
-        background-position : 810px
+      background-position : 900px -50px
     }
-}
+  }
+
+  .report {
+    margin-top: 10px;
+    padding-left: 15px;
+    height: 550px;
+    width: 462px;
+    font-size: 20px;
+    color:rgb(0, 255, 255);
+    display: inline-block;
+  }
