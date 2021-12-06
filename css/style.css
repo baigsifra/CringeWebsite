@@ -4,11 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     background-color:aqua;
     font-family:'Irish Grover', cursive;
+    transition: 1s;
+    background-image: url("../img/bg_website.jpg");
+    background-size: 800px;
+}
+
+body:hover {
+    background-size: 2000px;
+    transition: 1s;
 }
 
 .container {
@@ -68,7 +77,7 @@ body {
 }
 
 #web-body {
-    background-image: url("../img/bg_website.jpg");
+    animation: bgScroll 0.5s linear infinite;
 }
 
 #web-body {
@@ -84,3 +93,12 @@ body {
 .stop-button:hover {
     cursor: help;
 }
+
+@keyframes bgScroll {
+    0% {
+      background-position : 0px 0px
+    }
+    100% {
+      background-position : 0px -808px
+    }
+  }
