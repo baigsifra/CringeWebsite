@@ -54,6 +54,7 @@ body {
     font-size: 19px;
     overflow: hidden;
     background-color: rgb(143, 112, 46);
+    animation: move 3s linear infinite;
 }
 
 .list:hover {
@@ -125,4 +126,16 @@ body {
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
