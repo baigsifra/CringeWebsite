@@ -40,3 +40,15 @@ function startAudio(){
     audio.play();
     console.log("playing");
 }
+
+function destruction(){
+    let jumpscareImg = document.getElementById('jumpscare');
+    jumpscareImg.style.display = "block";
+    jumpscareImg.style.opacity = 1;
+    setTimeout(hide, 1000);
+}
+
+function hide(){
+    let jumpscareImg = document.getElementById('jumpscare');
+    jumpscareImg.style.display = "none"
+}
