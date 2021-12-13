@@ -58,10 +58,26 @@ function destruction(){
     let jumpscareImg = document.getElementById('jumpscare');
     jumpscareImg.style.display = "block";
     jumpscareImg.style.opacity = 1;
-    setTimeout(hide, 1000);
+    setTimeout(fade, 1000);
+    
 }
 
-function hide(){
-    let jumpscareImg = document.getElementById('jumpscare');
-    jumpscareImg.style.display = "none"
+function fade(){
+
+    var fadeTarget = document.getElementById("jumpscare");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.01;
+        } else {
+            fadeTarget.style.display = "none";
+            clearInterval(fadeEffect);
+        }
+    }, 10);
+    
 }
+
+
+
