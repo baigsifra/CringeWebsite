@@ -2,7 +2,8 @@ let start;
 let sound = new Howl({
   src: ['https://ia800902.us.archive.org/23/items/tvtunes_502/Pink%20Panther.mp3']
 });
-setInterval(function(){sound.play();}, genRandTime(6));
+
+setInterval(function(){sound.play();}, genRandTime(1, 6));
 
 function letin() {
     let randInt = Math.floor(Math.random() * 4 + 1);
@@ -14,17 +15,22 @@ function letin() {
     }
 }
 
+function begin() {
+    startColors();
+    setInterval(randomAnimation, 3000);
+}
+
 function startColors() {
     start = setInterval(randomColor, 1);
 }
 
-function genRandTime(max) {
-    return Math.floor(Math.random() * max + 1) * 1000;
+function genRandTime(min, max) {
+    return Math.floor(Math.random() * max + min) * 1000;
 }
 
 function stopColors() {
     clearInterval(start);
-    let randTime = genRandTime(3);
+    let randTime = genRandTime(1, 3);
     console.log(randTime);
     setTimeout(startColors, randTime);
 }
@@ -41,14 +47,9 @@ function startAudio(){
     console.log("playing");
 }
 
-function destruction(){
-    let jumpscareImg = document.getElementById('jumpscare');
-    jumpscareImg.style.display = "block";
-    jumpscareImg.style.opacity = 1;
-    setTimeout(hide, 1000);
-}
-
-function hide(){
-    let jumpscareImg = document.getElementById('jumpscare');
-    jumpscareImg.style.display = "none"
+function randomAnimation() {
+    let box = document.getElementById('players-list-box');
+    let randTime = Math.random() + .001;
+    let animation = "move " + randTime + "s linear infinite";
+    box.style.animation = animation;
 }
