@@ -74,6 +74,7 @@ body {
     transition: 1;
     background-image: url("../img/bg_website.jpg");
     background-size: 800px;
+    max-height: 100vh;
 }
 
 #web-body:hover {
@@ -143,4 +144,19 @@ body {
 #jumpscare {
     width: 100%;
     height: 100vh;
+}
+
+.alert {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  height: 100px;
+  overflow: scroll;
+}
+
+.alert p {
+  font-size: 30px;
 }

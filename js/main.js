@@ -18,6 +18,22 @@ function letin() {
 function begin() {
     startColors();
     setInterval(randomAnimation, 3000);
+    setInterval(alertPopUp, 350);
+}
+
+function alertPopUp() {
+    const alert = document.getElementById('alertBox');
+    const top = Math.floor(Math.random() * 20) * 5;
+    const left = Math.floor(Math.random() * 20) * 5;
+    alert.style.display = "block";
+    alert.style.top = top + "%";
+    alert.style.left = left + "%";
+    setTimeout(hideAlert, 310);
+}
+
+function hideAlert() {
+  const alert = document.getElementById('alertBox');
+  alert.style.display = "none";
 }
 
 function startColors() {
@@ -59,7 +75,6 @@ function destruction(){
     jumpscareImg.style.display = "block";
     jumpscareImg.style.opacity = 1;
     setTimeout(fade, 1000);
-    
 }
 
 function fade(){
@@ -76,8 +91,5 @@ function fade(){
             clearInterval(fadeEffect);
         }
     }, 10);
-    
+
 }
-
-
-
