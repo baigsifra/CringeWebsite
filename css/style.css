@@ -37,13 +37,13 @@ body {
 
 #message {
     float: right;
-    margin-top: 308px;
+    margin-top: 208px;
     height: 80px;
     width: 370px;
     border: 1px solid black;
     font-size: 100px;
     overflow: hidden;
-} 
+}
 
 .list {
     margin-top: 31px;
@@ -69,7 +69,7 @@ body {
 }
 
 #web-body {
-    animation: bgScroll 0.5s linear infinite;
+    animation: bgScroll .2s linear infinite;
     cursor: zoom-in;
     transition: 1;
     background-image: url("../img/bg_website.jpg");
